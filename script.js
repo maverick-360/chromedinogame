@@ -33,7 +33,14 @@ let isAlive = setInterval(() => {
     }
 }, 10);
 
-setInterval(() => {
-    scoreInt++;
-    score.innerHTML = scoreInt.toString();
-}, 1500)
+if (screen.width > 620) {
+    setInterval(() => {
+        scoreInt++;
+        score.innerHTML = scoreInt.toString();
+    }, 1500)
+} else {
+    setInterval(() => {
+        scoreInt++;
+        score.innerHTML = scoreInt.toString();
+    }, 800)
+}
