@@ -36,4 +36,4 @@ let isAlive = setInterval(() => {
 setInterval(() => {
     scoreInt++;
     score.innerHTML = scoreInt.toString();
-}, 1000)
+}, 1500)
